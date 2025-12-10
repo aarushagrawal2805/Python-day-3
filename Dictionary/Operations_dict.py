@@ -11,10 +11,8 @@ for i in my_dict:
     print(i,":",my_dict[i]) 
 
 #Check Key exist
+def check_key(data, key):
+    return key in data
 
-key1="Age"
-if key1 in my_dict:
-    print("Key exist : ",key1)
-else:
-    print("Key doesnt exist :",key1)
-    
+my_dict = {"name": "Aarush", "age": 20}
+print(check_key(my_dict, "age"))
